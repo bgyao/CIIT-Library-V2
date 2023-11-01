@@ -1,0 +1,54 @@
+[OPACCREDITS]
+
+<div class="footer-row">
+  
+  <div class="footer-column-1">
+    <h3 class="credits">ABOUT THE CIIT LIBRARY</h3>
+    <p>The CIIT Library is an educational repository of carefully selected, relevant books and printed materials vital in expanding the learning potential of students. It aims to complement the institution’s instructional curricula and research needs of the students. Furthermore, this is also where the students can relax and it offers a comfortable atmosphere conducive to peer learning.</p>
+    <!--<p style="text-align:center;">CIIT Philippines - School for Multimedia Arts, Web Design, 3D Animation, Mobile Game Development.</p>
+	<p style="text-align:center;">All Rights Reserved. Copyright © 2019 (<a href="https://www.ciit.edu.ph/privacy-policy/">View Privacy Policy</a>)</p> -->
+    
+  </div>
+  
+  <div class="footer-column-2">
+    <h3 class="credits">Quick links</h3>
+    <ul>
+      <li><a href="https://bit.ly/ciitrecommendbook" class="footer">Recommend a Book</a></li>
+      <li><a href="https://bit.ly/onlineborrowingfaqs" class="footer">How to borrow a book?</a></li>
+      <li><a href="https://airtable.com/shr89fEKxRkSEaU9Z" class="footer">Library Referrals</a></li>
+      <li><a href="https://bit.ly/ciitonlinedatabases" class="footer">Online Databases</a></li>
+      
+    </ul>
+  </div>
+  
+  <div class="footer-column-3">
+    <h3 class="credits">Contact Us</h3>
+    <address><ul>
+      <li>2F Interweave Building, 94 Kamuning Rd.</li>
+      <li>Brgy. Kamuning, Quezon City 1103</li>
+      <li>8 441 0737 / 8 441 1816</li>
+      <li>8 356 5818 / 8 285 2305</li>
+      <li><a href="mailto:library@ciit.edu.ph" class="footer">library.ciit.edu.ph</a></li>
+      <li>
+        <div>
+				<div class="row-box" id="box-1">
+                  <a href="https://web.facebook.com/ciitcollegelibrary/" title="fb.com/ciitcollegelibrary" target="_blank"><img src="/opac-tmpl/bootstrap/images/facebook logo vector.png" width="30"></a>
+				</div>
+				<div class="row-box" id="box-2">
+                  <a href="https://www.instagram.com/ciit.library/" title="@ciit.library" target="_blank"><img src="/opac-tmpl/bootstrap/images/instagram-logos-png-images-free-download-2.png" width="35"></a>
+				</div>
+  				<div class="row-box" id="box-3">
+                  <a href="mailto:library@ciit.edu.ph" title="library@ciit.edu.ph"><img src="/opac-tmpl/bootstrap/images/gmail_logo_PNG1.png" width="40"></a>
+				</div>
+        </div>
+      </li>
+	</ul></address>
+  </div>
+  
+</div>
+
+
+<!-- JS and CSS for Koha Galadriel OPAC Theme Plugin 
+   This JS was added automatically by installing the Koha Galadriel OPAC Theme Plugin
+   Please do not modify -->
+<!-- End of JS and CSS for Koha Galadriel OPAC Theme Plugin -->

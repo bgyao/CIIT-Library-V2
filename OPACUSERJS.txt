@@ -1,0 +1,170 @@
+[OPACUSERJS]
+
+/* IMPORTANT: Other codes here are in jQuery. Convert these into Javascript if more efficient. */
+
+/* Javascript codes */
+
+// Add help text under Course Reserves
+
+function addCourseSearchHelp () {
+  if (document.getElementById("opac-course-reserves")) {
+
+    var newpar = document.createElement("div");
+    var infotxt = document.createTextNode("Check the books recommended by your instructors! Search for your course/subject and explore resources to help you with your studies.");
+    newpar.appendChild(infotxt);
+    
+    var spancourse = document.getElementsByClassName("span12")[1];
+    spancourse.insertBefore(newpar, spancourse.childNodes[0]);
+    
+  }
+  
+}
+
+addCourseSearchHelp();
+
+// Add Google Tags to Cart window
+
+function addGoogleTagMgr () {
+  /* Create noscript tag */
+  const noscript = document.createElement("noscript");
+  
+  /* Create iframe tag */
+  noscript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K65VL4T" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
+  
+  if(document.getElementById('basket') == null ) {
+    return 0;
+  }
+  
+  else {
+    return document.getElementById('basket').prepend(noscript);
+  }
+  
+}
+
+addGoogleTagMgr();
+
+
+function showeBooks () {
+  
+  if(document.getElementById("moresearches")) {
+  moresearches = document.getElementById("moresearches");
+
+  moresearches.innerHTML = "<ul><li><a href='/cgi-bin/koha/opac-search.pl'>Advanced search</a></li><li><a href='/cgi-bin/koha/opac-course-reserves.pl'>Course search</a></li><li><a href='https://library.ciit.edu.ph/cgi-bin/koha/opac-search.pl?advsearch=1&idx=kw&idx=kw&idx=kw&do=Search&limit=mc-itype%2Cphr%3AEBK&sort_by=relevance'>eBooks</a></li></ul>";
+
+  spanEBK = document.createElement("span");
+  spanEBKtxt = "<a href=''>eBooks</a>";
+  spanEBK.appendChild(spanEBKtxt);
+  ullocator = document.getElementById("moresearches");
+  ullocator.appendChild(spanEBK);
+  }
+}
+
+showeBooks();
+//Add Google Analytics to 'Add to Cart'
+	//Convert to Javascript!!!
+$(document).ready(function(){
+  //while in opac-search.pl or viewing the search results
+  numrows = $("#numresults").text().replace(/[^0-9]/gi, '');
+
+  for(i=0; i < numrows; i++) {
+    assetnum = $("table.table.table-striped tr:nth-child("+ (i+1) +")").find("span.actions").find("a.btn.btn-link.cart").attr("data-biblionumber");
+    $("table.table.table-striped tr:nth-child("+ (i+1) +")").find("span.actions").find("a.btn.btn-link.cart").attr("onclick","ga('send','event','cart-action','add','Add to Cart','1');");
+  }
+
+  //while in opac-details.pl or viewing the book's details
+  var bnumbr = $("a[data-biblionumber]").attr("data-biblionumber");
+  //when logged in, viewing the record via opac-details.pl
+  $( "ul[id='action'] li:nth-child(4)" ).find("a.addtocart").attr("onclick","ga('send','event','cart-action','add','Add to Cart','1');"); 
+  
+  //when logged out, viewing the record via opac-details.pl
+  $( "ul[id='action'] li:nth-child(2)" ).find("a.addtocart").attr("onclick","ga('send','event','cart-action','add','Add to Cart','1');");
+});
+
+// Add Airtable link to Cart window
+$(document).ready(function(){
+  //Convert this to Javascript!!!
+if(document.getElementById("userbasket")) {
+  $("<a id='cartbutton' class=\"btn btn-link chkout\" href=\"https://airtable.com/shreatb2LEKzaf7sV\" target=\"popup\" onclick=\"window.open('https://airtable.com/shreatb2LEKzaf7sV','popup','width=600,height=600'); ga('send','event','checkout-action','checkout','Checkout'); return false;\"><i class='fa fa-shopping-basket'></i> Checkout</a>").insertAfter("div[class='dt-buttons']");
+  
+}
+
+});
+
+/* Makes account menu collapseable in mobile view */
+
+  x = document.querySelector(".menu-collapse-toggle");
+  if (x != null) {
+    x.setAttribute("onclick","usermenucollapse()");
+  }
+
+function usermenucollapse() {
+  document.querySelector(".menu-collapse").style.display = "block";
+  document.querySelector(".menu-collapse-toggle").setAttribute("onclick","usermenuhide()");
+  
+}
+
+function usermenuhide() {
+  document.querySelector(".menu-collapse").setAttribute("style","hidden");
+  document.querySelector(".menu-collapse-toggle").setAttribute("onclick","usermenucollapse()");
+}
+/***END: Collapseable account menu in mobile view***/
+
+
+
+/* jQuery codes. These may not be converted to Javascript for efficiency. */
+
+//Removes "no image"
+$(document).ready(function(){
+    $('.no-image').remove();
+});
+
+// tooltip func
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+//Replaces 'Lists' with 'Featured'
+$(document).ready(function(){
+  $("span[class='listslabel']").html("Featured");
+});
+
+//Replaces labels of login popup box
+$(document).ready(function(){
+  $("label[for='muserid']").html("Student/Employee ID (with dashes):");
+  $("label[for='mpassword']").html("Password:");  
+
+//Modifies search bar to be more user-friendly
+  $( "input[class='transl1']" ).attr("placeholder", "Search for books and eBooks..." );
+  $( "select[id='masthead_search'] option:first" ).text("Keywords");
+
+// Renames 'Course reserves' to 'Course Search'
+  $("a[href='/cgi-bin/koha/opac-course-reserves.pl']").text("Course search");
+});
+
+// Makes the text "Search" beside the search bar color white
+$(document).ready(function(){
+  $("label[for='masthead_search']").attr("style","color:white;");
+});
+
+
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170312029-1"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170312029-1');
+<!-- END: Global site tag (gtag.js) - Google Analytics -->
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K65VL4T');
+<!-- End Google Tag Manager -->

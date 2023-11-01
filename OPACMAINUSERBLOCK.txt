@@ -1,0 +1,93 @@
+[OPACMAINUSERBLOCK]
+
+<h2 style="color:#00354d; text-align:center; font-weight:bold;">MOST BORROWED BOOKS</h2>
+<center><span id="coverflow"></span></center>
+<!-- Debut du carrousel -->
+
+<!-- contents below carousel -->
+
+
+  <div id="borrowbook">
+    <h4>HOW TO BORROW A BOOK</h4>
+    <div class="borrowvideo-container">
+      <iframe src="https://drive.google.com/file/d/1M3FlilGzvUNpu6aJQADXHzkRSica7PjH/preview" class="borrowvideo" frameBorder=0></iframe>
+    </div>
+    <p style="padding-top: 15px;"><a href="https://sites.google.com/ciit.edu.ph/online-book-borrowing/" style="color:white; text-transform:none;" target="_blank">Got questions? Check out our FAQs.</a></p>
+  </div>
+
+
+
+<!--
+ HOW TO BORROW A BOOK 
+<div class="step-container">
+  <div class="steptitle"><h4>HOW TO BORROW BOOKS</h4></div>
+  <div class="step1">
+  	<img src="http://placehold.it/100">
+    <p>STEP 1</p>
+    <p>Type any keyword on the search bar and start searching.</p>
+  </div>
+  <div class="step2">
+    <img src="http://placehold.it/100">
+    <p>STEP 2</p>
+    <p>Select books that you want to borrow by adding them to the cart.</p>
+  </div>
+  <div class="step3">
+    <img src="http://placehold.it/100">
+    <p>STEP 3</p>
+    <p>Go to your cart, take a snapshot of the cart window, and click "Checkout".</p>
+  </div>
+  <div class="step4">
+    <img src="http://placehold.it/100">
+    <p>STEP 4</p>
+    <p>Fill out the Airtable form and wait for our confirmation.</p>
+  </div>
+</div>
+-->
+<!-- OTHER LIBRARY SERVICES -->
+<div class="libservice-container">
+  <div class="servtitle"><h4>OTHER LIBRARY SERVICES</h4></div>
+
+	<a class="servlink1" id="servlink">  
+  		<img src="/opac-tmpl/bootstrap/images/scan-01-01.png">
+    	<p class="servtitle">Scan Artwork</p>
+        <p>Create your digital portfolio.</p>
+    	<span>Available soon!</span>
+    </a>
+
+  
+
+    <a class="servlink2" id="servlink">  
+    	<img src="/opac-tmpl/bootstrap/images/left wing-01-01.png">
+    	<p class="servtitle">Left Wing Resevation</p>
+    	<p>Use the left wing for your org activity.</p>
+        <span>Available soon!</span>
+    </a>
+
+  
+
+    <a class="servlink3" id="servlink" href="https://airtable.com/shr89fEKxRkSEaU9Z" target="_blank">  
+    	<img src="/opac-tmpl/bootstrap/images/library referrals-01.png">
+    	<p class="servtitle">Library Referrals</p>
+      <p>Visit other libraries for your research.</p>
+      <span>LIBRARY<br>REFERRALS</span>
+    </a>
+
+
+    <a class="servlink4" id="servlink" href="https://bit.ly/2YoAw3y" target="_blank">  
+    	<img src="/opac-tmpl/bootstrap/images/thesis-01-01.png">
+    	<p class="servtitle">Online Databases</p>
+    	<p>Free access to thesis published all over the world.</p>
+      <span>ONLINE<br>DATABASES</span>
+    </a>
+
+  
+
+    <a class="servlink5" id="servlink">
+          <img src="/opac-tmpl/bootstrap/images/calibration-01-01.png">
+          <p class="servtitle">Screen Calibration</p>
+          <p>Calibrate your screen to display the right color.</p>
+      <span>Available soon!</span>
+    </a>
+    
+
+</div>

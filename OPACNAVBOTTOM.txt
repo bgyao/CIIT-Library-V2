@@ -1,0 +1,39 @@
+[OPACNAVBOTTOM]
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ee2c4864a7c6258179a6da4/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+<!-- BOOK OF THE MONTH -->
+<div class="bkreview">
+  <h4 style="color: #00354d;">BOOK OF THE MONTH</h4>
+  <!-- Replace the link below with the OPAC-ISBD view link to the book. Search the book in the OPAC first, click ISBD View, copy the link as seen from the address bar, and paste it inside the quotes in href. -->
+  <a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=6899" target="_blank" rel="noreferrer">
+     <img border="0" src="https://images-na.ssl-images-amazon.com/images/I/5196ZMP0QRL._SX321_BO1,204,203,200_.jpg" alt="Cover image">
+  </a>
+  
+  <!-- Replace the title of the book here -->
+  <p class="bkdetails">Number the Stars<br>
+    
+    <!-- Replace the author of the book here (before </p> ) -->
+    by Lois Lowry</p> 
+  
+  <!-- Preview of the book review here -->
+  <p>"Definitely a touching and thrilling novel. Lois Lowry's "Number the Stars" describes the story and life of the ten-year-old Annemarie who risked her life to save ..."</p>
+  <a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=6899">Read more</a>
+</div>
+
+<!-- Other Book of the Month -->
+<h5>Also read:</h5>
+<div class="separate" style="text-align:center;"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=8718" id="leftlinks">July 2020 Book of the Month</a></div>
+<!-- <div class="separate" style="text-align:center;"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=" id="leftlinks">June 2020 Book of the Month</a></div> -->

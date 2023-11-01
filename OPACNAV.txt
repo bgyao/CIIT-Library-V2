@@ -1,0 +1,10 @@
+[OPACNAV]
+
+<h3 style="color:#00354d">FEATURED COLLECTIONS</h3>
+  <div class="separate"><a href="https://sites.google.com/ciit.edu.ph/library-online-database/all" id="leftlinks" target="_blank">Online Databases</a></div>
+  <div class="separate"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-shelves.pl?op=view&shelfnumber=8&sortfield=title" id="leftlinks">Multimedia Arts</a></div>
+  <div class="separate"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-shelves.pl?op=view&shelfnumber=9&sortfield=title" id="leftlinks">Computer Science</a></div>
+  <div class="separate"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-shelves.pl?op=view&shelfnumber=10&sortfield=title" id="leftlinks">Graphic Novels</a></div>
+  <div class="separate"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-shelves.pl?op=view&shelfnumber=11&sortfield=title" id="leftlinks">Filipiniana</a></div>
+  <div class="separate"><a href="https://library.ciit.edu.ph/cgi-bin/koha/opac-shelves.pl?op=view&shelfnumber=12&sortfield=title" id="leftlinks">General Circulation</a></div>
+

@@ -1,0 +1,844 @@
+[OPACUSERCSS]
+
+/* BODY-RELATED */
+#wrap{ padding-right:0; padding-left:0; } /* whole body */
+
+/* Changes font of text
+
+body.branch-CIITMAIN {
+  font-family: "Montserrat", sans-serif;
+} */
+
+
+/* HEADER-RELATED */
+  /* upper-left logo */
+  #logo{ background:transparent url(/opac-tmpl/bootstrap/images/koha-green-logo.png) no-repeat scroll 0; } 
+
+/* OPAC BANNER */
+  #opacheader img:first-of-type {
+    height:100px;
+}
+
+/* SEARCH BOX */
+.mastheadsearch {
+  background: #00354d;
+  margin: 0;
+  border: 0;
+  padding-left: 10%;
+}
+
+select#masthead_search,
+button#searchsubmit.btn.btn-primary,
+input#translControl1.transl1 {
+  height: 40px ;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary:visited {
+    background-color: #43C7F4;
+    background-image: linear-gradient(180deg,#43C7F4,#43C7F4);
+}
+
+/* MORE SEARCH OPTIONS (Advanced Search, etc.) */
+#moresearches a, #moresearches a:link{ color:#00354d; }
+/*
+#moresearches {
+  visibility: hidden;
+}
+*/
+
+/* OTHER OPTIONS */
+
+/* Address Map */  
+.breadcrumb {
+  visibility: hidden;
+}
+
+/* removes "no image available" */
+.no-image { display: none !important; }
+
+*{margin: 0; padding: 0;}
+
+/*
+.coverflow img, .coverflow .item {
+    -moz-border-radius:10px;
+    -moz-box-shadow:0 5px 5px #777;
+    -o-border-radius:10px;
+    -webkit-border-radius:10px;
+    -webkit-box-shadow:0 5px 5px #777;
+    border-radius:10px;
+    box-shadow:0 5px 5px #777;
+    height:100%;
+    width:100%;
+}
+
+.itemTitle {
+    padding-top:30px;
+}
+
+.coverflow .selectedItem {
+    -moz-box-shadow:0 4px 10px #0071BC;
+    -webkit-box-shadow:0 4px 10px #0071BC;
+    border:1px solid #0071BC;
+    box-shadow:0 4px 10px #0071BC;
+}
+  */
+
+
+.listslabel {
+  visibility:inherit;
+}
+
+.caret {
+  visibility:hidden;
+}
+
+#login {
+    display: none;
+}
+ 
+div#notloggedin div.first {
+    width: 100%;
+    margin: auto;
+}
+
+#sidemenu a { text-decoration: none; color: #00354d; }
+#sidemenu {
+  width: 100%; 
+  font-size: 18;
+  background-color: #f8f9fa;
+}
+  
+  
+.row-menu {background-color: #00354d; text-align: center;}
+
+.row-box-item { height: 80px; width: 80px; overflow: hidden;
+  border-radius:60%;background-color: #fff;}
+
+.row-box {padding: 0px;display: inline-block; margin: 5px;}
+
+.row-box-text h3 {font-size: 8px;height: 30px; width: 80px;margin: 0px;padding: 0; color:#52caf5;text-align: center;}
+
+.span12 {margin: 0px; padding: 0px;}
+
+/* OPAC LEFT SIDE */
+a#leftlinks:link, a#leftlinks:visited {
+  font-weight: bold;
+  background-color: #00354d;
+  color: white;
+  padding: 5px 15px;
+  display: inherit;
+}
+
+a#leftlinks:hover, a#leftlinks:active {
+  background-color: grey;
+  }
+  
+div.separate{ margin: 2px 0px; }
+
+div.bkreview {
+  margin: 20px 0px; 
+  text-align:center; 
+  color:#00354d;
+}
+
+div.bkreview img {
+  margin: 0px 0px 10px;
+  width: 150px;
+}
+
+div.bkreview p {
+  font-size: 15px;
+}
+
+div.bkreview p.bkdetails {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* BELOW CAROUSEL */
+
+/* How to borrow a book */
+
+#borrowbook{
+  text-align: center; 
+  color: white; 
+  background: #00354d; 
+  border-radius: 5px;
+  padding: 5px 6px 5px 5px;
+}
+
+.borrowvideo-container {
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+}
+
+.borrowvideo {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.step-container {
+  background-color: #00354d;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.step-container .steptitle {
+  grid-column: 1 / 5;
+  grid-row:1;
+}
+
+.step-container .step1 {
+  grid-column:1; 
+  grid-row:2;
+}
+
+.step-container .step2 {
+  grid-column:2; 
+  grid-row:2;
+}
+
+.step-container .step3 {
+  grid-column:3; 
+  grid-row:2;
+}
+
+.step-container .step4 {
+  grid-column:4; 
+  grid-row:2;
+}
+
+.step-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Other Library Services */
+.libservice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  padding: 10px 20px;
+  color: #00354d;
+  text-align: center;
+}
+
+.libservice-container img { width: 150px; }
+
+.libservice-container div.servtitle {
+  grid-column:1/6;
+  grid-row:1;
+}
+.libservice-container a.servlink1 {
+  grid-column:1;
+  grid-row: 2;
+}
+
+.libservice-container a.servlink2 {
+  grid-column:2;
+  grid-row: 2;
+}
+
+.libservice-container a.servlink3 {
+  grid-column:3;
+  grid-row: 2;
+}
+
+.libservice-container a.servlink4 {
+  grid-column:4;
+  grid-row: 2;
+}
+
+.libservice-container a.servlink5 {
+  grid-column:5;
+  grid-row: 2;
+}
+
+.libservice-container a#servlink, a#servlink:visited {
+  text-decoration: none;
+  color: #00354d;
+}
+
+.libservice-container a#servlink:hover, a#servlink:active {
+  text-decoration: none;
+  color: #00354d;
+}
+
+.libservice-container a.#servlink { text-decoration: none; }
+
+.libservice-container a#servlink:hover {  position: relative; }
+
+.libservice-container a#servlink span { display:none; text-align:center; }
+
+.libservice-container a#servlink:hover span {
+  /* Tooltip properties */
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: block;
+  background: #00354d no-repeat 100% 5%;
+
+  /* Text Formatting */
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  
+  /* Tooltip Positioning */
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -70px; /* should be half of the width */
+}
+
+.libservice-container::after {
+  content: "";
+  clear: both;
+  display: none;
+}
+
+p.servtitle {
+  font-weight: bold;
+  margin: 10px 0px 0px;
+  }
+
+
+/* OPAC RIGHT SIDEBAR */
+
+#spotlight .newsarea {
+  border: 1px solid #eaeae6;
+}
+#spotlight p, .spotlight-headline {
+  text-align:center;
+  padding: 0px 15px;
+}
+
+#spotlight .spotlight-more {
+  text-align:center;
+  padding: 0px 15px 15px;
+}
+
+#opacnavright a:link, a:visited {
+  color: #00354d;
+  text-decoration: none;
+}
+
+#opacnavright a:hover, a:active{
+  color: #00354d;
+  text-decoration: underline;
+}
+
+/* Block 2: In The Spotlight */
+#spotlight .spotlight-header {
+	background:#fafafa url("/opac-tmpl/bootstrap/images/in-the-spotlight-bg.jpg") no-repeat center/cover;
+	mso-line-height-rule: exactly;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	border-top: 0;
+	border-bottom: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+#spotlight .spotlight-logo {
+	border: 0px;
+  	width: 80%;
+  	margin: 0px;
+  	outline: none;
+  	text-decoration: none;
+  	-ms-interpolation-mode: bicubic;
+}
+
+#spotlight .spotlight-headline {
+ 	margin: 15px 0px 20px;
+  	font-size: 16px;
+}
+
+#spotlight .spotlight-text {
+  	margin: 15px 0px;
+  	font-size: 15px;
+}
+#spotlight a:link, a:visited {
+ 	color: #43C7F4;
+  	text-decoration: none;
+}
+
+#spotlight a:link, a:visited {
+ 	color: #43C7F4;
+  	text-decoration: none;
+}
+
+/* Block 3: News Today */
+#newsfront .newstoday {
+  	mso-line-height-rule: exactly;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top: 0;
+	border-bottom: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+  	height: 200px;
+}
+
+/* ISBD VIEW */
+.isbd-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(5px, auto);
+  padding: 10px 20px;
+/*  border: 1px solid #00354d;
+  border-radius: 5px;*/
+}
+
+.isbd-column-1 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.isbd-column-2 {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  width: 300px;
+}
+
+.isbd-row::after {
+  content: "";
+  clear: both;
+  display: none;
+}
+
+/* FOOTER */
+
+div#opaccredits.noprint {  font-size: 14px;  }
+
+ul { list-style-type: none; }
+  
+h3.credits { color: white; }
+  
+a.footer:link { color: white; }
+  
+a.footer:hover { color: white; text-transform: underline; }
+  
+a.footer:visited { color: white; }
+  
+.footer-row {
+  background-color: #00354d;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 10px 20px;
+  color: white;
+}
+
+.footer-column-1 {
+	grid-column: 1;
+}
+  
+.footer-column-2 {
+	grid-column: 2;
+    padding-left: 15%;
+}
+  
+.footer-column-3 {
+	grid-column: 3;
+}
+
+
+/*************************************
+ *          MOBILE VIEW              *
+ *************************************/
+@media screen and (max-width: 600px) {
+
+/* SEARCH */
+input#translControl1.transl1,
+select#masthead_search,
+button#searchsubmit.btn.btn-primary {
+  height: 40px ;
+}
+  
+.mastheadsearch {
+  padding-left: 0.8em;
+}
+
+/* OPAC LEFT SIDE */
+div#opacnav {
+  	text-align:center;
+}
+    
+/* BELOW CAROUSEL */
+/* How to borrow a book - mobile view */
+.borrowbook{
+  padding: 5px;
+}
+.step-container {
+  background-color: #00354d;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.step-container .steptitle {
+  grid-column: 1 / 3;
+  grid-row:1;
+  font-size: 16px;
+}
+
+.step-container .step1 {
+  grid-column:1; 
+  grid-row:2;
+}
+
+.step-container .step2 {
+  grid-column:2; 
+  grid-row:2;
+}
+
+.step-container .step3 {
+  grid-column:1; 
+  grid-row:3;
+}
+
+.step-container .step4 {
+  grid-column:2; 
+  grid-row:3;
+}
+  
+.step-container::after {
+  content: "";
+  clear: both;
+  display: none;
+}
+  
+.step-container img {
+  width: 80px ;
+}
+
+/* Other Library Services - mobile view */
+.libservice-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  padding: 10px 20px;
+  color: #00354d;
+  text-align: center;
+  font-size: 14px;
+}
+
+.libservice-container div.servtitle {
+  grid-column:1/3;
+  grid-row: 1;
+  font-size: 16px;
+}
+
+.libservice-container a.servlink1 {
+  grid-column:1;
+  grid-row: 2;
+}
+.libservice-container a.servlink2 {
+  grid-column:2;
+  grid-row: 2;
+}
+.libservice-container a.servlink3 {
+  grid-column:1;
+  grid-row: 3;
+}
+.libservice-container a.servlink4 {
+  grid-column:2;
+  grid-row: 3;
+}
+
+.libservice-container a.servlink5 {
+  grid-column:1/3;
+  grid-row: 4;
+}
+
+.libservice-container::after {
+  content: "";
+  clear: both;
+  display: none;
+}
+  
+.libservice-container img {
+  width: 120px;
+}
+  
+  .libservice-container a#servlink span { display:none; }
+  .libservice-container a#servlink:hover span { display:none; }
+  
+/* IN THE SPOTLIGHT */
+#opacnavright {
+  text-align:center;
+}
+iframe#newsframe { width: 100%; height:250px; border: 1px solid black; }
+
+  /* Block 3: News Today */
+#newsfront .newstoday {
+  	mso-line-height-rule: exactly;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-top: 0;
+	border-bottom: 0;
+	padding-top: 9px;
+	padding-bottom: 9px;
+  	height: 350px;
+}
+  
+  /* ISBD VIEW -- mobile */
+.isbd-row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+/*  grid-auto-rows: minmax(50px, auto); */
+  padding: 10px 20px;
+}
+
+.isbd-column-1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.isbd-column-2 {
+  grid-column: 1;
+  grid-row: 1;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.isbd-column-2 img {
+  width: 150px;
+  }
+
+.isbd-row::after {
+  content: "";
+  clear: both;
+  display: none;
+}
+  
+/* FOOTER */
+.footer-row {
+  background-color: #00354d;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 10px 20px;
+  color: white;
+}
+  
+.footer-column-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+  
+.footer-column-2 {
+  grid-column: 1;
+  grid-row: 2;
+  padding-left: 0;
+}
+  
+.footer-column-3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+  }
+
+/* CART WINDOW */
+.chkout {
+ 	color: #08c;
+    filter: none;
+    float: none;
+    font-weight: 400;
+    position: inherit;
+    right: auto;
+    text-shadow: none;
+    top: auto; 
+}
+
+#cartbutton {
+ 	color: #08c;
+    filter: none;
+    float: none;
+    font-weight: 400;
+    position: inherit;
+    right: auto;
+    text-shadow: none;
+    top: auto; 
+}
+
+#cartbutton:hover {
+ 	color:inherit; 
+}
+
+/* FEATURED BOOKS GALLERY */
+
+div.gallery {
+  border: 1px solid #ccc;
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 10px;
+  position:relative;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: auto;
+  height: 35%;
+  position: relative;
+  margin-top: 15px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #00354d;
+  position:relative;
+/*  top: 60%;
+  width: 100%;*/
+}
+
+div.desc .bk-title {
+  font-size: 14px;
+}
+
+div.desc .bk-author {
+  font-size: 12px;
+  color: #0f0f0f;
+
+}
+
+div.desc a, a:visited {
+  color: #00354d;
+}
+
+div.desc a:hover, a:active {
+  color: #43c7f4;
+}
+
+div.action {
+  text-align: center;
+  position:absolute;
+  width: 100%;
+  bottom: 10px;
+  font-size: 11px;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 19.99999%;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 19.99999%;
+    margin: 6px 0;
+  }
+
+  div.gallery img {
+  width: auto;
+  height: 35%;
+  margin-top: 15px;
+}
+
+
+div.desc .bk-title {
+  font-size: 13px;
+}
+
+div.desc .bk-author {
+  font-size: 12px;
+  color: #0f0f0f;
+}
+
+div.action {
+  background-color: white;
+  width: 100%;
+  padding: 0px 5px;
+  text-align: center;
+  position:absolute;
+  left: 0px;
+  bottom: 5px;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 49.99999%;
+  }
+  
+  div.gallery {
+    height: 300px;
+  }
+div.gallery img {
+  width: auto;
+  height: 50%;
+  margin-top: 15px;
+}
+  div.action {
+  background-color: white;
+  text-align: center;
+  position:absolute;
+    width:100%;
+    margin:0;
+  left: 0px;
+  bottom: 10px;
+}
+}
+
+.clearfix {
+	margin-bottom: 15px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* TEST BLOCK 
+as of June 26, 2020, this block works.
+.subblock {
+ 	background: green; 
+} */ 
